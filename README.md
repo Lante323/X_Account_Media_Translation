@@ -61,6 +61,8 @@ This project provides a method to extract media tweets from a Twitter archive an
       ```
       python retweet_media_tweets.py
       ```
+      
+   1. Follow the prompts to enter your MFA code when requested.
 
 ## License
 
