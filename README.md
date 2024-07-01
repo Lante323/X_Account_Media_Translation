@@ -1,6 +1,6 @@
 # Twitter Media Tweets Retweeter
-
 This project provides a method to extract media tweets from a Twitter archive and retweet them from another account using Python and Selenium.
+* [README.md for Japanese](https://github.com/Lante323/X_Account_Media_Translation/blob/develop/README-ja.md)
 
 ## Table of Contents
 
@@ -14,7 +14,8 @@ This project provides a method to extract media tweets from a Twitter archive an
 - Python 3.x
 - Selenium
 - pandas
-- A Twitter account
+- Export old X(Twitter) Accouct CSV file
+- A Twitter account with MFA
 - ChromeDriver
 
 ## Installation
