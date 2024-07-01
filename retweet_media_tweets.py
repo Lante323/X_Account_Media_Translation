@@ -10,8 +10,9 @@ chrome_driver_path = 'path_to_your_chromedriver'
 # Login to New Twitter Account
 twitter_username = 'your_username'
 twitter_password = 'your_password'
+mfa_code = input('Enter MFA code: ')
 
-# Read Media　Tweets
+# Read Media Tweets
 media_tweets_df = pd.read_csv('media_tweets.csv')
 
 # WebDriver Settings
@@ -26,7 +27,10 @@ username_field.send_keys(twitter_username)
 password_field.send_keys(twitter_password)
 password_field.send_keys(Keys.RETURN)
 
-time.sleep(5)
+# Imput MFA code
+mfa_field = driver.find_element(By.NAME, 'challenge_response')
+mfa_field.send_keys(mfa_code)
+mfa_field.send_keys(Keys.RETURN)
 
 # Post Media Tweets
 for index, tweet in media_tweets_df.iterrows():
