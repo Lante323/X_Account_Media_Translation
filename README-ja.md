@@ -15,6 +15,7 @@
 - Selenium
 - pandas
 - Twitterアカウント
+- 旧Twitterアカウントからエクスポートしたアーカイブファイル
 - ChromeDriver
 
 ## インストール
@@ -32,7 +33,7 @@
    pip install -r requirements.txt
    ```
 
-1. ** ChromeDriver をダウンロードする:**
+1. **ChromeDriver をダウンロードする:**
 
    [こちら](https://developer.chrome.com/docs/chromedriver/downloads?hl=ja)から Chrome のバージョンに合った ChromeDriver をダウンロードし、プロジェクトディレクトリに配置します。
 
@@ -59,6 +60,9 @@
       ```
       python retweet_media_tweets.py
       ```
+
+   1. 指示に従ってMFAコードを入力します。
+
 
 ## License
 
